@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Photo Gallery</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <h1>Photo Gallery</h1>
+
+    <!-- Category Filter -->
+    <div class="category-filter">
+        <button data-category="all">All</button>
+        <button data-category="nature">Nature</button>
+        <button data-category="architecture">Architecture</button>
+        <button data-category="animals">Animals</button>
+    </div>
+
+    <!-- Gallery -->
+    <div class="gallery" id="gallery">
+        <!-- Gallery items will be dynamically generated -->
+    </div>
+
+    <!-- Lightbox -->
+    <div class="lightbox" id="lightbox">
+        <img src="" alt="Enlarged Image" id="lightbox-img">
+    </div>
+
+    <!-- Upload Form -->
+    <div class="upload-form">
+        <input type="file" id="uploadImage" accept="image/*">
+        <select id="categorySelect">
+            <option value="nature">Nature</option>
+            <option value="architecture">Architecture</option>
+            <option value="animals">Animals</option>
+        </select>
+        <button id="uploadBtn">Upload</button>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
